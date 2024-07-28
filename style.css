@@ -1,0 +1,197 @@
+/* Reset and general styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.between {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #6c5ce7;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.btn:hover {
+  background-color: #4a40d8;
+  transform: scale(1.05);
+}
+
+.number {
+  font-size: 6rem;
+  margin-top: 30px;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(to right bottom, #fd5c63, #ff9a8b);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+.number:hover {
+  transform: scale(1.1);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.guess {
+  padding: 16px;
+  font-size: 1.6rem;
+  border: 3px solid #6c5ce7;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 200px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #6c5ce7;
+  outline: none;
+}
+
+.guess::placeholder {
+  color: #999;
+}
+
+.check {
+  background-color: #6c5ce7;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.check:hover {
+  background-color: #4a40d8;
+  transform: scale(1.05);
+}
+
+.message {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.label-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.label-score, .label-highscore {
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+
+.score, .highscore {
+  font-weight: bold;
+}
+
+.label-highscore {
+  margin-top: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  .between {
+    font-size: 1rem;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+  
+  .number {
+    font-size: 5rem;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+  }
+  
+  .guess {
+    padding: 14px;
+    font-size: 1.4rem;
+  }
+  
+  .check {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+  
+  .message {
+    font-size: 1.5rem;
+  }
+  
+  .label-score, .label-highscore {
+    font-size: 1.2rem;
+  }
+}
